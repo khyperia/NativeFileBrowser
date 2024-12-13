@@ -1,0 +1,14 @@
+{
+  "name": "com.khyperia.nativefilebrowser",
+  "version": "1.0.0",
+  "displayName": "Native File Browser",
+  "description": "Open a native file browser window on Windows, MacOS, and Linux, using only C# code",
+  "license": "CC0-1.0",
+  "unity": "2022.3",
+  "author": {
+    "name": "khyperia",
+    "url": "https://khyperia.com/"
+  },
+  "dependencies": {
+  }
+}
