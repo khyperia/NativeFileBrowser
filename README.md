@@ -18,8 +18,7 @@ The implementations consist of:
 - Windows: Using COM interop to create an instance of IFileOpenDialog
 - Linux: Plain P/Invoke into gtk3. Gtk3 was chosen instead of gtk4 due to gtk3 being provided by Steam's distro-agnostic linux runtime (gtk4 is not at time of writing).
 - MacOS: P/Invoke into libobjc.A.dylib (C bindings to objective-C) to create an NSOpenPanel (an objective-C type).
-
-For future readers, if Windows COM breaks in Unity (perhaps with the coreclr upgrade), look into [GetOpenFileName](https://learn.microsoft.com/en-us/windows/win32/api/commdlg/nf-commdlg-getopenfilenamea). It only supports file dialogs, not folder dialogs, but it's a simple P/Invoke instead of COM.
+- Unused: WindowsGetFileName.cs uses [GetOpenFileName](https://learn.microsoft.com/en-us/windows/win32/api/commdlg/nf-commdlg-getopenfilenamea). If Windows COM breaks in Unity (perhaps with the coreclr upgrade), try this instead. It only supports file dialogs, not folder dialogs, but it's a simple P/Invoke instead of COM.
 
 ---
 
